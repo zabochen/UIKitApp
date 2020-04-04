@@ -37,20 +37,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npj-6M-q7V">
+                                <rect key="frame" x="245" y="352" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Kl0-B4-s5p"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="L1k-86-Z0S"/>
+                                </constraints>
+                                <state key="normal" title="Button_2"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN0-Au-sTd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahr-Uc-Ioi">
+                                <rect key="frame" x="50" y="352" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="81P-bC-d8N"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="PPQ-6C-if4"/>
+                                </constraints>
+                                <state key="normal" title="Button_1"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACA-X2-In8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DPX-dQ-jsU" firstAttribute="top" secondItem="jWz-BO-I3B" secondAttribute="bottom" constant="50" id="44a-fV-eQ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npj-6M-q7V" secondAttribute="trailing" constant="50" id="6TG-4D-za9"/>
                             <constraint firstItem="jWz-BO-I3B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="K5Z-M7-m5O"/>
+                            <constraint firstItem="npj-6M-q7V" firstAttribute="leading" secondItem="ahr-Uc-Ioi" secondAttribute="trailing" constant="115" id="LLa-7I-15Y"/>
                             <constraint firstItem="jWz-BO-I3B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="SuP-Dg-yQD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jWz-BO-I3B" secondAttribute="trailing" constant="50" id="YXb-Ma-eCH"/>
+                            <constraint firstItem="npj-6M-q7V" firstAttribute="top" secondItem="DPX-dQ-jsU" secondAttribute="bottom" constant="50" id="lV2-v0-AZN"/>
+                            <constraint firstItem="ahr-Uc-Ioi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="lq6-4s-RIS"/>
+                            <constraint firstItem="ahr-Uc-Ioi" firstAttribute="top" secondItem="DPX-dQ-jsU" secondAttribute="bottom" constant="50" id="tt7-Yv-I9F"/>
                             <constraint firstItem="DPX-dQ-jsU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zkc-ab-Fnh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="DPX-dQ-jsU" id="Dgm-Fb-0cF"/>
-                        <outlet property="label" destination="jWz-BO-I3B" id="YOz-EJ-0hx"/>
+                        <outlet property="label" destination="jWz-BO-I3B" id="JwN-34-n28"/>
+                        <outletCollection property="buttonScope" destination="ahr-Uc-Ioi" collectionClass="NSMutableArray" id="aFq-Td-C7w"/>
+                        <outletCollection property="buttonScope" destination="npj-6M-q7V" collectionClass="NSMutableArray" id="Iux-gI-fYk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
